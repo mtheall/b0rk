@@ -5,3 +5,4 @@
 #include <feos.h>
 
 #include "video.h"
+#include "bgscroll.h"
