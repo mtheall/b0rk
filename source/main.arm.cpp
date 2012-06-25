@@ -1,12 +1,7 @@
-#include <feos.h>
+#include "b0rk.h"
 
 int main(int argc, char *argv[]) {
-	FeOS_DirectMode();
-
-	// Disable autoupdates
-	FeOS_SetAutoUpdate(AUTOUPD_KEYS, false);
-	FeOS_SetAutoUpdate(AUTOUPD_OAM,  false);
-	FeOS_SetAutoUpdate(AUTOUPD_BG,   false);
+	initVideo();
 
 	for (;;)
 	{
@@ -16,6 +11,6 @@ int main(int argc, char *argv[]) {
 			break;
 	}
 
-	FeOS_ConsoleMode();
+	deinitVideo();
 	return 0;
 }
