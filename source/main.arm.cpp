@@ -3,9 +3,11 @@
 int main(int argc, char *argv[]) {
 	FeOS_DirectMode();
 
-	// Disable key autoupdate because it may cause
-	// side effects if the processing takes too long
+	// Disable autoupdates because I want to
+	// do them myself
 	FeOS_SetAutoUpdate(AUTOUPD_KEYS, false);
+	FeOS_SetAutoUpdate(AUTOUPD_KEYS, false);
+	FeOS_SetAutoUpdate(AUTOUPD_BG,   false);
 
 	for (;;)
 	{
