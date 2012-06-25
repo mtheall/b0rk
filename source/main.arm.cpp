@@ -3,10 +3,9 @@
 int main(int argc, char *argv[]) {
 	FeOS_DirectMode();
 
-	// Disable autoupdates because I want to
-	// do them myself
+	// Disable autoupdates
 	FeOS_SetAutoUpdate(AUTOUPD_KEYS, false);
-	FeOS_SetAutoUpdate(AUTOUPD_KEYS, false);
+	FeOS_SetAutoUpdate(AUTOUPD_OAM,  false);
 	FeOS_SetAutoUpdate(AUTOUPD_BG,   false);
 
 	for (;;)
